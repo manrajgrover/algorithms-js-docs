@@ -9,8 +9,7 @@ toc_footers:
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - installation
-  - errors
+  - data-structures/linkedlist.md
 
 search: true
 ---
@@ -22,34 +21,3 @@ search: true
 algorithms-js is a JavaScript library and it provides JavaScript algorithms and data structures.
 
 ## Supported data structures
-
-### Doubly linked list
-A doubly linked list is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. For more information see [Doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list) on Wikipedia.
-
-> **Example**:
-```python
-sg = shotgun_api3.Shotgun("https://piedpiper.shotgunstudio.com",
-    login="rhendriks",
-    password="c0mPre$Hi0n")
-sg.find("Shot", filters=[["sg_status_list", "is", "ip"]], fields=["code", "sg_status_list"])
-```
-
-> **Output**:
-```python
-[{'code': 'bunny_020_0170',
-  'id': 896,
-  'sg_sequence': {'id': 5, 'name': 'bunny_020', 'type': 'Sequence'},
-  'sg_status_list': 'ip',
-  'type': 'Shot'},
- {'code': 'bunny_020_0200',
-  'id': 899,
-  'sg_sequence': {'id': 5, 'name': 'bunny_020', 'type': 'Sequence'},
-  'sg_status_list': 'ip',
-  'type': 'Shot'},
- {'code': 'bunny_030_0080',
-  'id': 907,
-  'sg_sequence': {'id': 6, 'name': 'bunny_030', 'type': 'Sequence'},
-  'sg_status_list': 'ip',
-  'type': 'Shot'}]
-```python
-
